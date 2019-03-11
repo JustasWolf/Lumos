@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lumos</title>
+	<link rel="stylesheet" type="text/css" href="style_main.css">
+	<link rel="stylesheet" type="text/css" href="style_checkbox.css">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body onload="set_json_source('/statusjson')">
+	<h1>Панель управления подсветкой</h1>
+	<div class="control_element">
+		<span class="switcher_title" id="sw">Свечение</span>
+		<input type="checkbox" name="" class="switcher_input" id="light" onclick="sw(id)">
+		<label for="light" class="switcher_label"></label>
+		<span class="header">Режим:</span>
+		<select name="mode" id="input_mode" onchange="send('/set_mode?mode=' + this.value)">
+			<option value="1">Постоянный</option>
+			<option value="2">Синус</option>
+		</select>
+		<span class="srv" id="mode_value"></span>
+	</div>
+	<div class="controls" id="control_box">
+		<p class="control_item">
+			<label for="input_red" class="control_label">1) Красный</label>
+			<input class="color_input" type="range" name="red" id="input_red" min="0" max="255" value="0" oninput="set_value('red_value', this.value)" onchange="send('/set_color?' + this.name + '=' + this.value)">
+			<input class="outval" type="number" id="red_value" name="red" value="0" min="0" max="255" oninput="send('/set_color?' + this.name + '=' + this.value)">
+		</p>
+		<p class="control_item">
+			<label for="input_green" class="control_label">2) Зеленый</label>
+			<input class="color_input" type="range" name="green" id="input_green" min="0" max="255" value="0" oninput="set_value('green_value', this.value)" onchange="send('/set_color?' + this.name + '=' + this.value)">
+			<input class="outval" type="number" id="green_value" name="green" value="0" min="0" max="255" oninput="send('/set_color?' + this.name + '=' + this.value)">
+		</p>
+		<p class="control_item">
+			<label for="input_blue" class="control_label">3) Синий</label>
+			<input class="color_input" type="range" name="blue" id="input_blue" min="0" max="255" value="0" oninput="set_value('blue_value', this.value)" onchange="send('/set_color?' + this.name + '=' + this.value)">
+			<input class="outval" type="number" id="blue_value" name="blue" value="0" min="0" max="255" oninput="send('/set_color?' + this.name + '=' + this.value)">
+		</p>
+		<p class="control_item">
+			<label for="input_white" class="control_label">4) Белый</label>
+			<input class="color_input" type="range" name="white" id="input_white" min="0" max="255" value="0" oninput="set_value('white_value', this.value)" onchange="send('/set_color?' + this.name + '=' + this.value)">
+			<input class="outval" type="number" id="white_value" name="white" value="0" min="0" max="255" oninput="send('/set_color?' + this.name + '=' + this.value)">
+		</p>
+	</div>
+	<div id="sin_opt">
+		<hr>
+		<h3>Настройки синуса</h3>
+		<p class="control_item">
+			<label for="input_direction" class="control_label">Направление</label>
+			<select id="input_direction" onchange="send('/set_direction?dir=' + this.value)">
+				<option value="1">Вверх</option>
+				<option value="0">Вниз</option>
+			</select>
+			<span class="srv" id="direction_value"></span>
+		</p>
+		<p class="control_item">
+			<label for="input_speed" class="control_label">Скорость</label>
+			<input class="range_input" type="range" name="speed" id="input_speed" min="1" max="500" value="1" oninput="set_value('speed_value', this.value)" onchange="send('/set_speed?' + this.name + '=' + this.value)">
+			<input class="outval" type="number" id="speed_value" name="speed" value="1" min="1" max="500" oninput="send('/set_speed?' + this.name + '=' + this.value)">
+		</p>
+		<p class="control_item">
+			<label for="input_min" class="control_label">Минимум</label>
+			<input class="range_input" type="range" name="min" id="input_min" min="0" max="255" value="0" oninput="set_value('min_value', this.value)" onchange="send('/set_border?' + this.name + '=' + this.value)">
+			<input class="outval" type="number" id="min_value" name="speed" value="0" min="0" max="255" oninput="send('/set_border?' + this.name + '=' + this.value)">
+		</p>
+	</div>
+	<hr>
+	<div id="service">
+		<input type="button" class="serv_btn" value="Настройки" onclick="window.open('/config.htm', '_self')">
+		<input type="button" class="serv_btn" id="save_colors" value="Сохранить цвета" onclick="send('/save_colors')">
+	</div>
+	<hr>
+	<p class="info"><span class="info_header">Uptime:</span><span class="info_item" id="uptime"></span></p>
+</body>
+</html>

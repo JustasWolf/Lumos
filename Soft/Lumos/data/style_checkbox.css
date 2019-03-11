@@ -1,0 +1,82 @@
+.switcher_title{
+/*	border: 1px solid #0f0;*/
+	width: 80%;
+}
+
+.switcher_input{
+	display: none;
+}
+
+.switcher_input:checked + .switcher_label {
+	color: #000;
+}
+
+.switcher_input:checked + .switcher_label:before {
+	background-color: #46e276;
+}
+
+.switcher_input:checked + .switcher_label:after {
+	transform: translateX(23px);
+}
+
+.switcher_input:checked + .switcher_label:active:after {
+	transform: translateX(12px);
+}
+
+.switcher_input:checked + .switcher_label:active:before {
+	background-color: #b7f247;
+}
+
+.switcher_label{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+	
+	font-size: 14px;
+	color: #ccc;
+	cursor: pointer;
+	
+	position: relative;
+}
+
+.switcher_label:before{
+	content: "";
+	display: block;
+	width: 45px;
+	height: 22px;
+	background-color: #f56060;
+	border-radius: 10px;
+	
+	position: absolute;
+	top: 10%;
+	left: 0;
+	z-index: 1;
+}
+
+.switcher_label:after{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	
+	position: absolute;
+	top: 13%;
+	left: 1px;
+	z-index: 2;
+	
+	transition: transform .2s linear;
+}
+
+.switcher_label:active:after{
+	transform: translateX(12px);
+}
+
+.switcher_label:active:before{
+	background-color: #b7f247;
+}
+
+.switcher_text{
+	line-height: 22px;
+}

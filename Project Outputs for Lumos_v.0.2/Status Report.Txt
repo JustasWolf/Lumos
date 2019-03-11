@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Lumos_v.0.2.PrjPCB]
+   Generated File[Lumos_v.0.2_prom.TXT]
+   Generated File[Lumos_v.0.2_prom.LDP]
+   Generated File[Lumos_v.0.2_prom.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 20:20:53 On 20.10.2018

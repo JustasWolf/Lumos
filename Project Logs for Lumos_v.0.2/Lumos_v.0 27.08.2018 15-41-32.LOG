@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=GND Pin=Q1-1
+Removed Pin From Net: NetName=NetQ1_1 Pin=Q1-4
+Removed Pin From Net: NetName=NetDS1_2 Pin=Q1-5
+Removed Pin From Net: NetName=NetDS1_2 Pin=Q1-6
+Removed Pin From Net: NetName=NetDS1_2 Pin=Q1-7
+Removed Pin From Net: NetName=NetDS1_2 Pin=Q1-8
+Removed Pin From Net: NetName=GND Pin=Q2-1
+Removed Pin From Net: NetName=NetQ2_1 Pin=Q2-4
+Removed Pin From Net: NetName=NetDS2_2 Pin=Q2-5
+Removed Pin From Net: NetName=NetDS2_2 Pin=Q2-6
+Removed Pin From Net: NetName=NetDS2_2 Pin=Q2-7
+Removed Pin From Net: NetName=NetDS2_2 Pin=Q2-8
+Removed Pin From Net: NetName=GND Pin=Q3-1
+Removed Pin From Net: NetName=NetQ3_1 Pin=Q3-4
+Removed Pin From Net: NetName=NetDS3_2 Pin=Q3-5
+Removed Pin From Net: NetName=NetDS3_2 Pin=Q3-6
+Removed Pin From Net: NetName=NetDS3_2 Pin=Q3-7
+Removed Pin From Net: NetName=NetDS3_2 Pin=Q3-8
+Removed Pin From Net: NetName=GND Pin=Q4-1
+Removed Pin From Net: NetName=NetQ4_1 Pin=Q4-4
+Removed Pin From Net: NetName=NetDS4_2 Pin=Q4-5
+Removed Pin From Net: NetName=NetDS4_2 Pin=Q4-6
+Removed Pin From Net: NetName=NetDS4_2 Pin=Q4-7
+Removed Pin From Net: NetName=NetDS4_2 Pin=Q4-8
+Change Component Footprint: Designator=R5 Old Footprint=RES0603 New Footprint=RES1206
+Change Component Footprint: Designator=R10 Old Footprint=RES0603 New Footprint=RES1206
+Change Component Footprint: Designator=R11 Old Footprint=RES0603 New Footprint=RES1206
+Change Component Footprint: Designator=R12 Old Footprint=RES0603 New Footprint=RES1206
+Change Component Footprint: Designator=Q1 Old Footprint=SO-8 New Footprint=D-PAK
+Change Component Footprint: Designator=Q2 Old Footprint=SO-8 New Footprint=D-PAK
+Change Component Footprint: Designator=Q3 Old Footprint=SO-8 New Footprint=D-PAK
+Change Component Footprint: Designator=Q4 Old Footprint=SO-8 New Footprint=D-PAK
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=NetDS1_2 Pin=Q1-4
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=GND Pin=Q2-3
+Added Pin To Net: NetName=NetDS2_2 Pin=Q2-4
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=GND Pin=Q3-3
+Added Pin To Net: NetName=NetDS3_2 Pin=Q3-4
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=GND Pin=Q4-3
+Added Pin To Net: NetName=NetDS4_2 Pin=Q4-4

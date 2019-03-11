@@ -1,0 +1,11 @@
+Added Component: Designator=C3(CAPC0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=+12 Pin=C3-2
+Change Net Name : Old Net Name=NetDS1_2 New Net Name=NetJ1_3
+Change Net Name : Old Net Name=NetDS2_2 New Net Name=NetJ1_4
+Change Net Name : Old Net Name=NetDS3_2 New Net Name=NetJ1_5
+Change Net Name : Old Net Name=NetDS4_2 New Net Name=NetJ1_6
+Added Member To Class: ClassName=Lumos_v.0.2 Member=Component C3 1uF
